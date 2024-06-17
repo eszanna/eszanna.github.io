@@ -32,11 +32,9 @@
 }
 
 #navigation__logo{
-    background: #ee0979;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+    background: #ee0979; 
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979); 
+    background: linear-gradient(to right, #ff6a00, #ee0979); 
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -382,7 +380,7 @@
     background: linear-gradient(to right, #A8CABA, #5D4157); 
 }
 
-.fa-book, .fa-users{
+.fa-book, .fa-github, .fa-users{
     font-size: 14rem;
 }
 
@@ -459,4 +457,49 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+}
+
+/*Projects section*/
+.projects {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.projects h1 {
+    background-color: #ee0979;
+    background-image: linear-gradient(to right, #ff6a00 0%, #ee0979 100%); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.projects__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects__card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition: 0.3s ease-in;
 }
