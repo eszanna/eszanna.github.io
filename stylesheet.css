@@ -4,7 +4,6 @@
     padding: 0;
     font-family:'Courier New', Courier, monospace;
     scroll-behavior: smooth;
-    
 }
 
 .navigation{
@@ -28,7 +27,6 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-
 }
 
 #navigation__logo{
@@ -55,8 +53,8 @@
 
 .navigation__item{
     height: 80px;
-
 }
+
 .navigation__links{
     color: white;
     display: flex;
@@ -73,8 +71,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    width: 100%;
-   
+    width: 100%; 
 }
 
 .button{
@@ -110,6 +107,7 @@
         max-width: 1300px;
         padding: 0;
     }
+
     .navigation__menu{
         background: black;
         display: grid;
@@ -247,12 +245,10 @@
 @media screen and (max-width: 770px){
     .intro__heading{
         font-size: 60px;
-
     }
 
     .intro__description{
         font-size: 40px;
-        
     }
 }
 
@@ -260,7 +256,6 @@
 .main {
     background-color: black;
     padding: 10rem 0;
-
 }
 
 .main__container {
@@ -293,7 +288,6 @@
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 34px;
-
 }
 
 .main__content h2{
@@ -365,7 +359,6 @@
 
 .main__image--container{
     text-align: center;
-
 }
 
 .main__image--card{
@@ -380,7 +373,7 @@
     background: linear-gradient(to right, #A8CABA, #5D4157); 
 }
 
-.fa-book, .fa-github, .fa-users{
+.fa-book, .fa-github, .fa-users, .fa-user-plus{
     font-size: 14rem;
 }
 
@@ -480,6 +473,7 @@
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
     font-size: 2.5rem;
+    align-items: center;
 }
 
 .projects__wrapper {
@@ -490,16 +484,77 @@
 
 .projects__card {
     margin: 10px;
-    height: 425px;
-    width: 300px;
+    height: 530px;
+    width: 450px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    color: black;
+    background: #5D4157;  
+    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  
+    background: linear-gradient(to right, #A8CABA, #5D4157); 
     transition: 0.3s ease-in;
+    overflow: hidden; 
 }
+
+.projects__img {
+    height: 100%; /* Stretch to cover the card */
+    width: 100%; /* Stretch to cover the card */
+}
+
+.projects__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* This will cover the area without stretching the image */
+}
+
+.projects__card h2{
+    text-align: center;
+}
+
+.projects__card p{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.projects.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.projects__card button{
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: black;
+    font-size: 1rem;
+}
+
+.projects__card button:hover{
+    cursor: pointer;
+}
+
+.projects__card:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px){
+    .projects__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projects__wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Footer*/
