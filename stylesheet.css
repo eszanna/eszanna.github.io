@@ -513,18 +513,6 @@
     text-align: center;
 }
 
-.projects__card p{
-    text-align: center;
-    margin-top: 24px;
-    font-size: 20px;
-}
-
-.projects.button{
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
 .projects__card button{
     color: white;
     padding: 14px 24px;
@@ -556,5 +544,3 @@
         grid-template-columns: 1fr;
     }
 }
-
-/*Footer*/
