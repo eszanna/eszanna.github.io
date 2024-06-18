@@ -428,7 +428,7 @@
         width: 250px;
     }
 
-    .fa-users, .fa-book {
+    .fa-users, .fa-book, .fa-user-plus, .fa-github{
         font-size: 4rem;
     }
 
@@ -541,6 +541,14 @@
 
 @media screen and (max-width: 768px){
     .projects__wrapper{
+        display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
+        height: 90%;
+        margin: 0 auto;
+    }
+    .projects__card {
+        height: 425px;
+        width: 425px;
     }
 }
