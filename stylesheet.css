@@ -535,7 +535,7 @@
         grid-template-columns: 1fr;
     }
     .projects__card {
-        width: 90%;
+        width: 80%;
         height: 100%;
     }
 }
