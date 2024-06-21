@@ -498,7 +498,7 @@
 
 .projects__card {
     margin: 10px;
-    height: 530px;
+    height: 100%;
     width: 450px;
     border-radius: 4px;
     display: flex;
@@ -540,6 +540,7 @@
     .projects__card {
         margin: 0 auto;
         max-width: 70%;
+        height: 100%;
     }
 }
 
