@@ -537,7 +537,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .projects__card {
-        width: 80%;
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 600px){
@@ -545,7 +545,7 @@
         grid-template-columns: 1fr;
     }
     .projects__card {
-        width: 80%;
+        max-width: 80%;
         height: 100%;
     }
 }
