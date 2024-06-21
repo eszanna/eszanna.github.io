@@ -527,7 +527,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .projects__card {
-        width: 100%;
+        width: 80%;
     }
 }
 @media screen and (max-width: 600px){
