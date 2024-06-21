@@ -532,19 +532,23 @@
     transition: 0.4s ease-in;
     cursor: pointer;
 }
+
 @media screen and (max-width: 1300px){
     .projects__wrapper{
         grid-template-columns: 1fr 1fr;
     }
     .projects__card {
+        margin: 0 auto;
         max-width: 80%;
     }
 }
+
 @media screen and (max-width: 600px){
     .projects__wrapper{
         grid-template-columns: 1fr;
     }
     .projects__card {
+        margin: 0 auto;
         max-width: 80%;
         height: 100%;
     }
