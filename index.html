@@ -29,7 +29,12 @@
                         <a href="#projects" class="navigation__links" id="projects-page">PROJECTS</a>
                     </li>
                     <li class="navigation__button">
-                        <a href="#contact" class="button" id="contact">CONTACT</a>
+                        <button id="language" class="button">Magyar nyelven</button>
+                        <script type="text/javascript">
+                            document.getElementById("language").onclick = function () {
+                                location.href = "hungarian.html";
+                            };
+                        </script>
                     </li>
                 </ul>
             </div>

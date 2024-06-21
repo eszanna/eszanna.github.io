@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width", initial-scale="1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/77c9f0ed04.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <nav class="navigation">
+            <div class="navigation__container">
+                <a href="#home" id="navigation__logo">Szlovák Anna</a>
+                <div class="navigation__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navigation__menu">
+                    <li class="navigation__item">
+                        <a href="#home" class="navigation__links" id="home-page">FŐOLDAL</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#info" class="navigation__links" id="info-page">INFO</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#projects" class="navigation__links" id="projects-page">PROJEKTMUNKÁK</a>
+                    </li>
+                    <li class="navigation__button">
+                        <button id="language" class="button">Switch to English</button>
+                        <script type="text/javascript">
+                            document.getElementById("language").onclick = function () {
+                                location.href = "index.html";
+                            };
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="intro" id="home">
+            <div class="intro__container">
+                <h1 class="intro__heading"> Üdvözöllek a
+                    <span>weboldalamon</span>
+                </h1>
+                <p class="intro__description">mert ez menőbb mint egy pdf önéletrajz</p>
+                <button class="main__button"><a href="#contact">Vegyetek fel</a></button>
+            </div>
+        </div>
+
+        <!--Info-->
+        <div class="main" id="info">
+            <div class="main__container">
+                <div class="main__image--container">
+                    <div class="main__image--card"><i class="fa solid fa-book"></i></div>
+                </div>
+                    <div class="main__content">
+                        <h1>Rólam</h1>
+                        <h2>Tanulmányok:</h2>
+                        <h3>BME Mérnök informatikus Bsc</h3>
+                        <p>Kezdve: 2022 szeptembertől</p>
+                        <p>Várható befejezés: 2026 január</p>
+                        <h3>Kedvenc tantárgyaim: </h3>
+                        <p>- Algoritmuselmélet<br>- Adatbázisok (SQL, relációs adatbázisok)<br>- Számítógépes Grafika (OpenGL)</p>
+                        <button class="main__button"><a href="https://www.vik.bme.hu/page/52/">Tanterv</a></button>
+                        <h2>Készségek:</h2>
+                        <p>Ismert programozási nyelvek: C, C++, C# (.NET), Java, Python</p>
+                        <p>Beszélt nyelvek: magyar (anyanyelv), angol (C1)</p>
+                        <p></p>
+                    </div>
+                    <div class="main__image--container">
+                        <div class="main__image--card"><i class="fa-brands fa-github"></i></div>
+                    </div>
+                    <div class="main__content">
+                        <h1>Projektmunkák</h1>
+                        <h3>Megtekinthetőek a GitHub profilomon:</h3>
+                        <button class="main__button"><a href="https://github.com/eszanna">eszanna</a></button>
+                    </div>
+            </div>
+        </div>
+
+        <!--Projects section-->
+        <div class="projects" id="projects">
+            <h1>Az egyetemen készített házi feladataim:</h1>
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>Egy konzolos aknakereső játék C nyelven</h2>
+                    <div class="projects__img">
+                        <img src="minesweeper.PNG" alt="Project Image1">
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <h2>Egy filmeket tároló adatbázis C++</h2>
+                    <div class="projects__img">
+                        <img src="filmtar.PNG" alt="Project Image">
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <h2>Conway életjátéka, hatszögekkel, Java</h2>
+                    <div class="projects__img">
+                        <img src="game_of_life.png" alt="Project Image">
+                    </div>
+                </div>
+               <div class="projects__card">
+                    <h2>Pontok, vonalak és metszéspontok 2D-ben, OpenGL, C++</h2>
+                    <div class="projects__img">
+                        <img src="pointcollection.PNG" alt="Project Image">
+                    </div>
+                </div>
+                 <div class="projects__card">
+                    <h2>Bézier, Lagrange, Catmull-Rom görbe rajzoló program, OpenGL, C++</h2>
+                    <div class="projects__img">
+                        <img src="catmull.png" alt="Project Image">
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <h2>Színes 3D testek, OpenGL, C++</h2>
+                    <div class="projects__img">
+                        <img src="3d.png" alt="Project Image">
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <h2>Egy már létező projekthez implementáltunk kétféle legrövidebb-út kereső algoritmust, Java</h2>
+                    <div class="projects__img">
+                        <img src="mapeditor.png" alt="Project Image">
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <h2>Egy kisebb csapatban dolgozva készítettünk egy játékot, amiben BME-s hallgatókat lehet irányítani, Java</h2>
+                    <div class="projects__img">
+                        <img src="undergraduate.png" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="main" id="contact">
+            <div class="main__container">
+                <div class="main__image--container">
+                    <div class="main__image--card"><i class="fa solid fa-user-plus"></i></div>
+                </div>
+                    <div class="main__content">
+                        <h1>Email:</h1>
+                        <h3>szlovak.anna2003 @ gmail.com</h3>
+                        <p>phone: +36 70 603 149</p>
+                    </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
