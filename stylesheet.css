@@ -436,17 +436,19 @@
 @media screen and (max-width: 480px){
     .main__image--card{
         max-width: 90%;
+        max-height: 90%;
         height: 250px;
         width: 250px;
     }
 
     .main__image--card img {
         max-width: 90%;
+        max-height: 90%;
         height: auto;
     }
 
     .fa-users, .fa-book, .fa-user-plus, .fa-github{
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .main__content h1{
@@ -460,7 +462,7 @@
     }
     .main__content p{
         margin-top: 2rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .main__button{
@@ -545,6 +547,7 @@
         max-width: 70%;
         height: 100%;
     }
+
 }
 
 @media screen and (max-width: 600px){
