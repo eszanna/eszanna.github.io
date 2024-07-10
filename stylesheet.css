@@ -244,11 +244,11 @@
 
 @media screen and (max-width: 770px){
     .intro__heading{
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .intro__description{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -394,29 +394,29 @@
     }
 
     .main__image--container{
-        max-width: 100%;
+        max-width: 90%;
         justify-content: center;
         display: flex; 
     }
 
     .main__image--card{
-        max-width: 100%;
+        max-width: 90;
         height: 425px;
         width: 425px;
     }
 
     .main__image--card img {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
     }
 
     .main__content{
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
     .main__content h1{
         font-size: 2.5rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .main__content h2{
@@ -435,13 +435,13 @@
 
 @media screen and (max-width: 480px){
     .main__image--card{
-        max-width: 100%;
+        max-width: 90%;
         height: 250px;
         width: 250px;
     }
 
     .main__image--card img {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
     }
 
@@ -465,7 +465,7 @@
 
     .main__button{
         padding: 12px 36px;
-        margin: 2.5rem 0;
+        margin: 2rem 0;
     }
 }
 
