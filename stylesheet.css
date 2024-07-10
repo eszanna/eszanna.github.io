@@ -437,20 +437,20 @@
 
 @media screen and (max-width: 480px){
     .main__image--card{
-        max-width: 90%;
-        max-height: 90%;
+        max-width: 100%;
+        max-height: 100%;
         height: 250px;
         width: 250px;
     }
 
     .main__image--card img {
-        max-width: 90%;
-        max-height: 90%;
+        max-width: 100%;
+        max-height: 100%;
         height: auto;
     }
 
-    .fa-users, .fa-book, .fa-user-plus, .fa-github{
-        font-size: 2rem;
+    .fa-users, .fa-book, .fa-user-plus, .fa-github, .fa-person-dress{
+        font-size: 3rem;
     }
 
     .main__content h1{
