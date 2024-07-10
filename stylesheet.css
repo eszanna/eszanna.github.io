@@ -364,7 +364,8 @@ html, body {
 }
 
 .main__image--container{
-    padding: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -487,7 +488,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .projects h1 {
@@ -564,7 +565,7 @@ html, body {
     }
     .projects__card {
         margin: 0 auto;
-        max-width: 70%;
+        max-width: 80%;
         height: 100%;
     }
 }
