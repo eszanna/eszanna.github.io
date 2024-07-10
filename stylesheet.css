@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+
+    overflow-x: unset !important;
+
+}
+
 .navigation{
     background: black;
     height: 80px;
