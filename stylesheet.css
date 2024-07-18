@@ -511,7 +511,8 @@
 .projects__card {
     margin: 10px;
     height: 100%;
-    width: 450px;
+    width: 400px;
+    max-width: 100%;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -557,13 +558,24 @@
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 850px){
     .projects__wrapper{
         grid-template-columns: 1fr;
     }
     .projects__card {
         margin: 0 auto;
         max-width: 80%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .projects__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .projects__card {
+        margin: 0 auto;
+        width: 280px;
         height: 100%;
     }
 }
