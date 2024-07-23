@@ -6,6 +6,36 @@ body{
     background: linear-gradient(to bottom, #9a8478, #1e130c); */
 }
 
+.welcome{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.intro__heading{
+    font-size: 75px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.welcome span{
+    font-size: 100px;
+    background: #5D4157;  
+    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  
+    background: linear-gradient(to right, #A8CABA, #5D4157); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 .circle{
     height: 100vh; /* 100 percent of height of screen*/
     width: 100%;
