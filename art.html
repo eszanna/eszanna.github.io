@@ -16,16 +16,16 @@
 
             <div class="circle">
                 <div class="slider" style="--quantity: 10">
-                        <div class="item" style="--position: 1"><img src="pics/1.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 2"><img src="pics/2.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 3"><img src="pics/3.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 4"><img src="pics/4.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 5"><img src="pics/5.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 6"><img src="pics/6.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 7"><img src="pics/7.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 8"><img src="pics/8.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 9"><img src="pics/9.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 10"><img src="pics/10.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 1"><img src="pics/1.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 2"><img src="pics/2.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 3"><img src="pics/3.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 4"><img src="pics/4.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 5"><img src="pics/5.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 6"><img src="pics/6.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 7"><img src="pics/7.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 8"><img src="pics/8.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 9"><img src="pics/9.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 10"><img src="pics/10.jpg" alt="drawings"></div>
                 </div>
             </div>
 
@@ -37,15 +37,15 @@
 
             <div class="circle">
                 <div class="slider" style="--quantity: 9">
-                        <div class="item" style="--position: 1"><img src="pics/11.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 2"><img src="pics/12.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 3"><img src="pics/13.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 4"><img src="pics/14.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 5"><img src="pics/15.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 6"><img src="pics/16.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 7"><img src="pics/17.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 8"><img src="pics/18.jpg" alt="Project Image" class="popup-img"></div>
-                        <div class="item" style="--position: 9"><img src="pics/19.jpeg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 1"><img src="pics/11.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 2"><img src="pics/12.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 3"><img src="pics/13.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 4"><img src="pics/14.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 5"><img src="pics/15.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 6"><img src="pics/16.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 7"><img src="pics/17.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 8"><img src="pics/18.jpg" alt="drawings"></div>
+                        <div class="item" style="--position: 9"><img src="pics/19.jpeg" alt="drawings"></div>
                 </div>
             </div>
             <script>
@@ -69,7 +69,7 @@
                             document.body.appendChild(fullSizeImage);
                 
                             //add event listener to remove full-size class on click
-                            fullSizeImage.addEventListener('click', function() {
+                            overlay.addEventListener('click', function() {
                                 fullSizeImage.style.animation = 'growOut 0.5s forwards';
                                 fullSizeImage.addEventListener('animationend', function() {
                                 document.body.removeChild(fullSizeImage); //remove the full-size image

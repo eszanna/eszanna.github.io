@@ -9,9 +9,9 @@ body{
 .text{
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    height: 90%;
+    max-height: 90%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -96,7 +96,7 @@ body{
     max-height: 100%;
     object-fit: contain;
     background: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
+    cursor: not-allowed;
     animation: growIn 0.5s forwards;
 }
 
@@ -126,5 +126,41 @@ body{
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
-    cursor: not-allowed;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) { 
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .circle{
+        width: 100vw;
+        height: 100vh;
+    }
+    .circle .slider{
+        width: 45vw;
+        height: 45vh;
+        left: calc(50% - 22.5vw); 
+    }
+    .circle .slider .item{
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(50vw); 
+    }
+    .circle .slider .item img{
+        width: 70%;
+        height: 70%;
+    }
+    .text{
+        width: 90vw;
+        padding: 1vw;
+        font-size: 40px;
+    }
+    .text span{
+        font-size: 40px;
+    }
+    .heading{
+        font-size: 40px;
+    }
 }
