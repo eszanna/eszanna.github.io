@@ -1,7 +1,8 @@
+
 body{
     font-family:'Courier New', Courier, monospace;
-    scroll-behavior: smooth;
     background: black;  
+    overflow-x: hidden;
     /*background: -webkit-linear-gradient(to bottom, #9a8478, #1e130c); 
     background: linear-gradient(to bottom, #9a8478, #1e130c); */
 }
@@ -170,6 +171,7 @@ body{
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    box-sizing: border-box; 
 }
 
 #navigation__logo{
@@ -221,8 +223,9 @@ body{
         height: 80px;
         z-index: 1;
         width: 100%;
-        max-width: 1300px;
+        max-width: 100%;
         padding: 0;
+        margin: 0;
     }
 
     .navigation__menu{
@@ -231,7 +234,7 @@ body{
         grid-template-columns: auto;
         margin: 0;
         width: 100%;
-        position: absolute;
+        position: relative;
         top: -1000px;
         opacity: 1;
         transition: all 0.5s ease;
@@ -246,10 +249,12 @@ body{
         z-index: 100;
         height: 60vh;
         font-size: 1.5rem;
+        width: 100%;
     }
 
     #navigation__logo{
-        padding-left: 25px;
+        padding-left: 10px;
+        width: 500px;
     }
 
     .navigation__toggle .bar{
@@ -263,20 +268,21 @@ body{
     .navigation__links{
         text-align: center;
         padding: 2rem;
-        width: 100%;
+        width: 80%;
         display: table;
     }
 
     #mobile-menu{
         position: absolute;
         top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
+        right: 1%;
+        transform: translate(1%, 20%);
     }
 
     .navigation__toggle .bar{
         display: block;
         cursor: pointer;
+        margin-right: 5px;
     }
 
     #mobile-menu.is-active .bar:nth-child(2){
@@ -416,11 +422,8 @@ body{
 }
 
 @media screen and (max-width: 720px) { 
-    body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-
     .circle{
+        max-width: 100%;
         width: 100vw;
         height: 100vh;
     }
@@ -437,8 +440,8 @@ body{
     }
 
     .circle .slider .item img{
-        width: 70%;
-        height: 70%;
+        width: 75%;
+        height: 75%;
     }
 
     .text{
