@@ -8,6 +8,38 @@
         <link rel="stylesheet" href="art_stylesheet.css">
     </head>
     <body>
+        <nav class="navigation">
+            <div class="navigation__container">
+                <a href="#home" id="navigation__logo">Szlovák Anna</a>
+                <div class="navigation__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navigation__menu">
+                    <li class="navigation__item">
+                        <a href="#sketchbook" class="navigation__links" id="home-page">SKETCHBOOK</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#colorful" class="navigation__links" id="info-page">COLORFUL</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="./index.html" class="navigation__links" id="projects-page">BACK TO MAIN SITE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const navMenu = document.querySelector('.navigation__menu');
+            
+                mobileMenu.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    mobileMenu.classList.toggle('is-active');
+                });
+            });
+        </script>
             <div class="text">               
                     <h1 class="heading">Here are some of the highlights from my
                         <span>sketchbook</span>
@@ -15,7 +47,7 @@
             </div>
 
             <div class="circle">
-                <div class="slider" style="--quantity: 10">
+                <div class="slider" style="--quantity: 10" id="sketchbook">
                         <div class="item" style="--position: 1"><img src="pics/1.jpg" alt="drawings"></div>
                         <div class="item" style="--position: 2"><img src="pics/2.jpg" alt="drawings"></div>
                         <div class="item" style="--position: 3"><img src="pics/3.jpg" alt="drawings"></div>
@@ -36,7 +68,7 @@
             </div>
 
             <div class="circle">
-                <div class="slider" style="--quantity: 9">
+                <div class="slider" style="--quantity: 9" id="colorful">
                         <div class="item" style="--position: 1"><img src="pics/11.jpg" alt="drawings"></div>
                         <div class="item" style="--position: 2"><img src="pics/12.jpg" alt="drawings"></div>
                         <div class="item" style="--position: 3"><img src="pics/13.jpg" alt="drawings"></div>
