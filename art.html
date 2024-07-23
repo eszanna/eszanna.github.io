@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width", initial-scale="1.0">
+        <title>My Art</title>
+        <link rel="stylesheet" href="art_stylesheet.css">
+    </head>
+    <body>
+            <div class="circle">
+                <div class="slider" style="--quantity: 10">
+                        <div class="item" style="--position: 1"><img src="1.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 2"><img src="2.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 3"><img src="3.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 4"><img src="4.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 5"><img src="5.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 6"><img src="6.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 7"><img src="7.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 8"><img src="8.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 9"><img src="9.jpg" alt="Project Image" class="popup-img"></div>
+                        <div class="item" style="--position: 10"><img src="10.jpg" alt="Project Image" class="popup-img"></div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const images = document.querySelectorAll('.circle .slider .item img');
+                    const slider = document.querySelector('.circle .slider');
+                    
+                    images.forEach(image => {
+                        image.addEventListener('click', function() {
+                            slider.style.animation = 'none'; //stop the animation
+
+                            const overlay = document.createElement('div');
+                            overlay.className = 'overlay';
+                            document.body.appendChild(overlay);
+                            
+                            //clone the clicked image and add the full-size class
+                            const fullSizeImage = this.cloneNode();
+                            fullSizeImage.classList.add('full-size');
+                
+                            //append the full-size image to the body
+                            document.body.appendChild(fullSizeImage);
+                
+                            //add event listener to remove full-size class on click
+                            fullSizeImage.addEventListener('click', function() {
+                                fullSizeImage.style.animation = 'growOut 0.5s forwards';
+                                fullSizeImage.addEventListener('animationend', function() {
+                                document.body.removeChild(fullSizeImage); //remove the full-size image
+                                document.body.removeChild(overlay); //remove the overlay
+                                slider.style.animation = ''; //restart the animation
+                                });
+                            });
+                        });
+                    });
+                });
+                </script>
+                
+    </body>
+</html>
