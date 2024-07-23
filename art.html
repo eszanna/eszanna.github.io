@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="art_stylesheet.css">
     </head>
     <body>
+        <div id="loader"></div>
         <nav class="navigation">
             <div class="navigation__container">
                 <a href="#home" id="navigation__logo">Szlovák Anna</a>
@@ -33,10 +34,15 @@
             document.addEventListener('DOMContentLoaded', function() {
                 const mobileMenu = document.getElementById('mobile-menu');
                 const navMenu = document.querySelector('.navigation__menu');
-            
+                const loader = document.getElementById('loader');
+
                 mobileMenu.addEventListener('click', function() {
                     navMenu.classList.toggle('active');
                     mobileMenu.classList.toggle('is-active');
+                });
+
+                window.addEventListener('load', function() {
+                    loader.style.display = 'none';
                 });
             });
         </script>

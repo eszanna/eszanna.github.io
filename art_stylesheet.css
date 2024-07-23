@@ -6,6 +6,34 @@ body{
     background: linear-gradient(to bottom, #9a8478, #1e130c); */
 }
 
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 5px solid #fff;
+    border-top: 5px solid #ee0979; /* Customizable color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .navigation{
     background: black;
     height: 80px;
