@@ -6,7 +6,7 @@ body{
     background: linear-gradient(to bottom, #9a8478, #1e130c); */
 }
 
-.welcome{
+.text{
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -18,13 +18,13 @@ body{
     padding: 30px;
 }
 
-.intro__heading{
+.heading{
     font-size: 75px;
     margin-bottom: 24px;
     color: white;
 }
 
-.welcome span{
+.text span{
     font-size: 100px;
     background: #5D4157;  
     background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  
