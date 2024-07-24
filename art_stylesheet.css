@@ -149,7 +149,6 @@ body{
     }
 }
 
-
 .navigation{
     background: black;
     height: 80px;
@@ -311,13 +310,13 @@ body{
 }
 
 .heading{
-    font-size: 75px;
+    font-size: 50px;
     margin-bottom: 24px;
     color: white;
 }
 
 .text span{
-    font-size: 100px;
+    font-size: 75px;
     background: #5D4157;  
     background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  
     background: linear-gradient(to right, #A8CABA, #5D4157); 
